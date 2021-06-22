@@ -1,0 +1,64 @@
+﻿<Page x:Class="DiplomOtdel.Views.Pages.SupportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DiplomOtdel.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1600"
+      Title="Связь с разработчиком">
+
+    <Grid>
+        <Image Source="/back/white.jpg" Stretch="Fill"/>
+        <Grid>
+            <StackPanel HorizontalAlignment="Center" Margin="15">
+                <Label Content="Связь с разработчиком" FontSize="30" FontFamily="Malgun Gothic"/>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Left" Margin="15">
+                <Button x:Name="btnBack"  Click="btnBack_Click" Content="ᐸ"
+                        Width="50" Height="50" FontSize="25" BorderBrush="Transparent">
+                </Button>
+            </StackPanel>
+
+            <GroupBox VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="Black" Header="Социальные сети">
+
+                <StackPanel Orientation="Horizontal">
+
+                    <StackPanel Orientation="Vertical" Margin="50">
+                        <Image Source="/back/vk.png" Width="100"/>
+                        <TextBlock HorizontalAlignment="Center">
+                    <Hyperlink FontSize="20" x:Name="vkSup" Click="vkSup_Click">
+                        Связь в VK
+                    </Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" Margin="50">
+                        <Image Source="/back/q.png" Width="100"/>
+                        <TextBlock HorizontalAlignment="Center">
+                    <Hyperlink FontSize="20" x:Name="qSup" Click="qSup_Click">
+                        Задать вопрос на Яндекс.Кью
+                    </Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" Margin="50">
+                        <Image Source="/back/telegram.png" Width="100"/>
+                        <TextBlock HorizontalAlignment="Center">
+                    <Hyperlink FontSize="20" x:Name="tgSup" Click="tgSup_Click">
+                        Сообщение в Telegram
+                    </Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 150">
+                <Border BorderBrush="Black" BorderThickness="1" CornerRadius="15" Width="500" Height="70">
+                    <Label Content="Email почта - zi__grein@mail.ru" FontSize="30" FontFamily="Malgun Gothic" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

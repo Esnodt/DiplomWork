@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1cb317b8b66f4b6a8dae2152f8c7c772" Name="Diagram1">
+        <EntityTypeShape EntityType="PersonnelDepartmentModel.AdditionalInformation" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonnelDepartmentModel.EmployeeStatus" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonnelDepartmentModel.EmploymentRecord" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonnelDepartmentModel.GenderTable" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonnelDepartmentModel.MainInfo" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonnelDepartmentModel.Passport" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonnelDepartmentModel.PhotoEmployee" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonnelDepartmentModel.Salary" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonnelDepartmentModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonnelDepartmentModel.WorkSchedule" Width="1.5" PointX="3" PointY="19.25" IsExpanded="true" />
+        <AssociationConnector Association="PersonnelDepartmentModel.AdditionalInformation_idGender_GenderTable_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonnelDepartmentModel.MainInfo_idAdditionalInformation_AdditionalInformation_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonnelDepartmentModel.MainInfo_idEmployeeStatus_EmployeeStatus_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonnelDepartmentModel.MainInfo_idEmploymentRecord_EmploymentRecord_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonnelDepartmentModel.MainInfo_idPassport_Passport_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonnelDepartmentModel.MainInfo_idPhotoEmployeen_PhotoEmployee_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonnelDepartmentModel.MainInfo_idSalary_Salary_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonnelDepartmentModel.MainInfo_idWorkSchedule_WorkSchedule_ID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
